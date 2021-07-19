@@ -1,0 +1,13 @@
+#!/usr/bin/picolisp /usr/lib/picolisp/lib.l
+(load "@ext.l" "@lib/http.l" "@lib/xhtml.l")
+(setq PORT(8080))
+(de hdl0()
+	(
+		html 0 "PicoLisp - Index" NIL  NIL
+		(prin "<link rel=\"stylesheet\" href=\"./css/style.css\">")
+		(<h1> NIL "PicoLisp - Index")
+		(<p> NIL"PicoLisp" )
+	)
+)
+(prin "Server listining on " PORT "...\n")
+(server PORT "!hdl0")

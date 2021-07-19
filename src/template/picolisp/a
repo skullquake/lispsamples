@@ -1,0 +1,4 @@
+#!/usr/bin/picolisp /usr/lib/picolisp/lib.l
+(load "@ext.l")
+(prin "a\n")
+(bye)

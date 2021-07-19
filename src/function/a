@@ -1,0 +1,12 @@
+#!/usr/bin/picolisp /usr/lib/picolisp/lib.l
+(load "@ext.l")
+( de f0 (a)
+	(prin a "\n")
+)
+( de f1 (a)
+	(f0 a)
+)
+(f0 42)
+(f0 24)
+(f1 "foo")
+(bye)

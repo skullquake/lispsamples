@@ -1,0 +1,4 @@
+#!/bin/bash
+#segmentation fault under wsl
+#sudo apt-get install clisp clisp-dev
+sudo apt-get picolisp

@@ -1,0 +1,29 @@
+#!/usr/bin/picolisp /usr/lib/picolisp/lib.l
+(load "@ext.l")
+(
+	prin(
+		if (= 'foo 'bar ) "foo==bar" "foo!=bar"
+	)
+)
+(prin "\n")
+(
+	prin(
+		if (= 4 4 ) "4==4" "4!=4"
+	)
+)
+(prin "\n")
+(setq A(0))
+(setq B(1))
+(
+	prin(
+		if (= A A ) "A==A" "A!=A"
+	)
+)
+(prin "\n")
+(
+	prin(
+		if (= A B ) "A==B" "A!=B"
+	)
+)
+(prin "\n")
+(bye)

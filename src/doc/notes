@@ -1,0 +1,11 @@
+PicoLisp[edit]
+
+Contents of the file "goodbye.l":
+
+(html 0 "Bye" NIL NIL
+   "Goodbye, World!" )
+
+Start server:
+
+$ pil @lib/http.l @lib/xhtml.l -'server 8080 "goodbye.l"' -wait
+

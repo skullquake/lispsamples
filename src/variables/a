@@ -1,0 +1,7 @@
+#!/usr/bin/picolisp /usr/lib/picolisp/lib.l
+(load "@ext.l")
+(setq A(42))
+(prin A "\n")
+(setq A (2 4))
+(prin A "\n")
+(bye)
