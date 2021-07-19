@@ -1,0 +1,7 @@
+#!/usr/bin/picolisp /usr/lib/picolisp/lib.l
+(load "@ext.l")
+;no single quote does not inhibit evaluation
+(prin (* 2 3) "\n")
+;single quote inhibits evaluation
+(prin `(* 2 3) "\n")
+(bye)

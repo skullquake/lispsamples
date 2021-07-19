@@ -1,0 +1,8 @@
+#!/usr/bin/picolisp /usr/lib/picolisp/lib.l
+(load "@ext.l")
+;Goto URL: https://www.the-m6.net/blog/fixed-point-arithmetic-in-picolisp/
+;set scale
+(scl 3)
+;use format and *Scl to print human readable
+(print(format (*/ 32.1 1.056 1.0) *Scl))(print "\n")
+(bye)

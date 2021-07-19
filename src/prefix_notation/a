@@ -1,0 +1,11 @@
+#!/usr/bin/picolisp /usr/lib/picolisp/lib.l
+(load "@ext.l")
+#1+2
+(prin(+ 1 2))(prin "\n")
+#1+2*3
+(prin(+ 1 (* 2 3)))(prin "\n")
+#1+2*3/4
+(prin(+ 1 (* 2 (/ 3 4))))(prin "\n")
+#(1+2)*3/4
+(prin(/(*(+ 1 2)3)4))(prin "\n")
+(bye)
