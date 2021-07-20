@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="./js/lips.min.js"></script>
+	</head>
+	<body>
+		<!--
+		<script type="text/x-scheme" bootstrap>
+			(let ((what "world")
+				(greet "hello"))
+				(display (string-append "hello" " " what)))
+		</script>
+		-->
+		<!--
+		<script type="text/x-scheme" src="example.lips"><script>
+		-->
+		<script type="text/x-scheme">
+			(display 42)
+		</script>
+		<script type="text/x-scheme">
+			(display (let ((a 10) (b 20)) (* a b)))
+		</script>
+		<script>
+			lips.exec('(let ((a 10) (b 20)) (* a b))').then(result => {
+				result.forEach(function(result) {
+					if (typeof result !== 'undefined') {
+						console.log(result.toString());
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
